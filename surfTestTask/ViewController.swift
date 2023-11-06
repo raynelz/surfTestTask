@@ -130,10 +130,10 @@ class ViewController: UIViewController {
             halfView.heightAnchor.constraint(equalTo: view.heightAnchor, multiplier: 0.5),
             halfView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
             halfView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            halfView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
+            halfView.bottomAnchor.constraint(equalTo: view.bottomAnchor),
             
             //mySkillsLabel
-            mySkillsLabel.topAnchor.constraint(equalTo: descriptionStackView.bottomAnchor, constant: 40),
+            mySkillsLabel.topAnchor.constraint(equalTo: halfView.topAnchor, constant: 20),
             mySkillsLabel.leadingAnchor.constraint(equalTo: halfView.safeAreaLayoutGuide.leadingAnchor, constant: 16),
         ])
     }
